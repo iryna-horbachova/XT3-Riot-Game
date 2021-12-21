@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 2532213874237655532}
   - component: {fileID: 7036646275553184232}
   - component: {fileID: 203597757768795177}
+  - component: {fileID: 1404170503018618604}
   m_Layer: 0
   m_Name: Orange_Robot
   m_TagString: Player
@@ -253,6 +254,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c35f3d3df0a974ae6846634ed063b1ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardsText: {fileID: 0}
+--- !u!114 &1404170503018618604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5521847070158066689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33810d2749720432b8469edea4bb973e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
+  animator: {fileID: 7036646275553184232}
 --- !u!1 &6941443883722808204
 GameObject:
   m_ObjectHideFlags: 0
