@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private bool jump = false;
     private bool crouch = false;
 
+    [SerializeField] private AudioSource jumpSoundEffect;
+
     void Start()
     {
         
@@ -25,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         
         if (Input.GetButtonDown("Jump"))
         {
+            jumpSoundEffect.Play();
             jump = true;
             animator.SetBool("Jumping", jump);
         }

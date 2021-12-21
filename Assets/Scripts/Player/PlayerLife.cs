@@ -13,6 +13,8 @@ public class PlayerLife : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rigidbody;
 
+    [SerializeField] private AudioSource deathSoundEffect;
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -41,6 +43,7 @@ public class PlayerLife : MonoBehaviour
 
     private void Die()
     {
+        deathSoundEffect.Play();
         rigidbody.bodyType = RigidbodyType2D.Static;
         animator.SetTrigger("Death");
         healthBar.SetHealth(0);
