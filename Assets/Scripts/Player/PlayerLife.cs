@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int currentHealth;
+    private int maxHealth = 100;
+    private int currentHealth;
 
     public HealthBar healthBar;
 
@@ -25,20 +25,24 @@ public class PlayerLife : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    void TakeDamage(int damage) 
+    public void TakeDamage(int damage) 
     {
         currentHealth -= damage;
+
+        StartCoroutine(VisualIndicator(Color.red));
         healthBar.SetHealth(currentHealth);
+        
         if (currentHealth <= 0)
         {
             Die();
         }
+    }
+
+    private IEnumerator VisualIndicator(Color color)
+    {
+        GetComponent<SpriteRenderer>().color = color;
+        yield return new WaitForSeconds(0.15f);
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 
     private void Die()
@@ -49,16 +53,16 @@ public class PlayerLife : MonoBehaviour
         healthBar.SetHealth(0);
     }
 
-    private void RestartLevel()
+    public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Trap"))
         {
-            Die();
+            TakeDamage(20);
         }
     }
 }

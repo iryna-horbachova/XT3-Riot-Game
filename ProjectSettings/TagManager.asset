@@ -8,6 +8,7 @@ TagManager:
   - Ground2
   - Card
   - Enemy
+  - Trap
   layers:
   - Default
   - TransparentFX

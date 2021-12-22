@@ -30,7 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1599947399079678165}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &8990181409288065643
 PolygonCollider2D:
@@ -100,7 +100,7 @@ Transform:
   m_LocalScale: {x: 0.125, y: 0.125, z: 0}
   m_Children: []
   m_Father: {fileID: 1599947399079678165}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5521847070158066689
 GameObject:
@@ -142,9 +142,9 @@ Transform:
   m_LocalPosition: {x: -8.61, y: -2.49, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 0}
   m_Children:
+  - {fileID: 4487077697728863005}
   - {fileID: 4617001525971606544}
   - {fileID: 7043172575544562240}
-  - {fileID: 4487077697728863005}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -347,8 +347,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33810d2749720432b8469edea4bb973e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
   healthBar: {fileID: 0}
   deathSoundEffect: {fileID: 1619565341098691345}
 --- !u!82 &1398479779948655967
@@ -776,5 +774,5 @@ Transform:
   m_LocalScale: {x: 0.125, y: 0.125, z: 0}
   m_Children: []
   m_Father: {fileID: 1599947399079678165}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
