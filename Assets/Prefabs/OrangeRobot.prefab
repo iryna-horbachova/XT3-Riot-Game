@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 2469710414438297950}
   - component: {fileID: 152640505624418101}
   m_Layer: 0
-  m_Name: Orange_Robot
+  m_Name: OrangeRobot
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
