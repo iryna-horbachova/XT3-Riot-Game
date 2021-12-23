@@ -9,6 +9,7 @@ TagManager:
   - Card
   - Enemy
   - Trap
+  - Key
   layers:
   - Default
   - TransparentFX
