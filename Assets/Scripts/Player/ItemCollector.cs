@@ -10,8 +10,11 @@ public class ItemCollector : MonoBehaviour
 
     [SerializeField] private Text cardsText;
     [SerializeField] private Text keysText;
-    [SerializeField] private AudioSource collectionSoundEffect;
-    [SerializeField] private AudioSource keySoundEffect;
+
+    [SerializeField] 
+    private AudioSource collectionSoundEffect;
+    [SerializeField] 
+    private AudioSource keySoundEffect;
 
     private void OnTriggerEnter2D(Collider2D collision) 
     {
