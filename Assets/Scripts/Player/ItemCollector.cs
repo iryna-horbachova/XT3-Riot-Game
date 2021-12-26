@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int cards = 0;
+    public int cards = 0;
     private int keys = 0;
 
     [SerializeField] private Text cardsText;
