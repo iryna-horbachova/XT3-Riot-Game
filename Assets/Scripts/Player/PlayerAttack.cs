@@ -40,6 +40,11 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+    public void IncreaseAttackDamage(int damageIncrease)
+    {
+        attackArea.GetComponent<AttackArea>().IncreaseAttackDamage(damageIncrease);
+    }
+
     private void Attack()
     {
         animator.SetTrigger("Attack");

@@ -9,10 +9,7 @@ public class PauseController : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
-    void Start()
-    {
-        
-    }
+    public GameObject inventoryPanelUI;
 
     // Update is called once per frame
     void Update()
@@ -46,6 +43,11 @@ public class PauseController : MonoBehaviour
     {
         Resume();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void ShowInventoryPanel()
+    {
+        pauseMenuUI.SetActive(true);
     }
 
     public void LoadMenu()

@@ -12,12 +12,9 @@ public class PlayerMovement : MonoBehaviour
     private bool jump = false;
     private bool crouch = false;
 
-    [SerializeField] private AudioSource jumpSoundEffect;
+    private float moveMultiplier = 1f;
 
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource jumpSoundEffect;
 
     void Update()
     {
@@ -43,13 +40,18 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+        controller.Move(horizontalMove * Time.fixedDeltaTime * moveMultiplier, crouch, jump);
         resetProperties();
     }
 
     public void OnLanding() 
     {
         animator.SetBool("Jumping", jump);
+    }
+
+    public void IncreaseMovementSpeed(float multiplier)
+    {
+        moveMultiplier = multiplier;
     }
 
     private void resetProperties() 

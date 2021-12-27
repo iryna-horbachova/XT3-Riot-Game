@@ -5,13 +5,7 @@ using UnityEngine.UI;
 
 public class StoreController : MonoBehaviour
 {
-    public enum BoosterOption 
-    {
-        Mayonnaise,
-        Samogon,
-        SpeedPill
-    }
-
+    
     private int cardsCount; 
     private int mayonnaiseCount; // 0
     private int samogonCount; // 1
