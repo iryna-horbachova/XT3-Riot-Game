@@ -57,9 +57,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.25, y: 0.15}
+    - - {x: 0.41858146, y: 0.23000467}
       - {x: 0.1, y: 0}
-      - {x: 0.25, y: -0.15}
+      - {x: 0.41000962, y: -0.19857432}
 --- !u!114 &5049422686383983972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,6 +336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c35f3d3df0a974ae6846634ed063b1ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cards: 0
   cardsText: {fileID: 0}
   keysText: {fileID: 0}
   collectionSoundEffect: {fileID: 8721020718526427306}

@@ -45,11 +45,6 @@ public class PauseController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void ShowInventoryPanel()
-    {
-        pauseMenuUI.SetActive(true);
-    }
-
     public void LoadMenu()
     {
         SceneManager.LoadScene("Menu");
