@@ -11,6 +11,7 @@ TagManager:
   - Trap
   - Key
   - Health
+  - Wall
   layers:
   - Default
   - TransparentFX
